@@ -1,31 +1,31 @@
 --SELECT ALL THE COLUMNS--
-	1. CREATE A TABLE.
+	-- CREATE A TABLE.
 
 
 	CREATE TABLE Student 
 	(
-	ID INT Identity(1,1) NOT NULL,
-	Name  NVARCHAR(200) NOT NULL,
-	Age INT NOT NULL,
-	Address NVARCHAR(200) NOT NULL
-	PRIMARY KEY (ID)
+	 ID INT Identity(1,1) NOT NULL,
+	 Name  NVARCHAR(200) NOT NULL,
+	 Age INT NOT NULL,
+	 Address NVARCHAR(200) NOT NULL
+	 PRIMARY KEY (ID)
 	);
 
 
-	Syntax
+	--Syntax--
 
 	SELECT  * from table_name;
 
-	Example 
+	--Example-- 
 
 	SELECT * FROM Student;
 
 	INSERT INTO Student (Name,Age,Address) VALUES
-	('John',23,'Noida'),
-	('Tina',21,'Gurgaon'),
-	('Sofia',24,'Jammu'),
-	('Sam',21,'Goa'),
-	('Tom',19,'Kerala');
+	 ('John',23,'Noida'),
+	 ('Tina',21,'Gurgaon'),
+	 ('Sofia',24,'Jammu'),
+	 ('Sam',21,'Goa'),
+	 ('Tom',19,'Kerala');
 
 	SELECT Name, Address FROM Student;
 	
@@ -33,13 +33,13 @@
 	SELECT DISTINCT Age FROM Student;
 
 	--HOW TO USE WHERE CLAUSE--
-	 Syntax 
+	--Syntax-- 
 
 	 SELECT Column1, Column2
 	 FROM table_name
 	 WHERE Conditions;
 
-	 Example
+	 --Example--
 
 
 	 SELECT ID , Name 
@@ -48,13 +48,13 @@
 
 	--ORDER BY CLAUSE--
 	 
-	 Syntax
+	 --Syntax--
 
 	 SELECT Column1, Column2
 	 FROM table_name
 	 ORDER BY Column1,Column2;
 	
-	Example
+	--Example--
 
 	SELECT * FROM Student
 	ORDER BY Age;
