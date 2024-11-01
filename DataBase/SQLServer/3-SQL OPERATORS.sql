@@ -43,6 +43,10 @@
 
 	SELECT * FROM Employees 
 	WHERE NOT Department = 'IT';
+
+	SELECT * FROM Employees 
+	WHERE Salary  != 40;
+
 	
 --IN OPERATOR--
 	
@@ -59,3 +63,8 @@
 	SELECT * FROM Employees
 	WHERE FirstName LIKE 'S%';
 
+	SELECT * FROM Employees 
+	WHERE LastName LIKE '%A%';
+
+	SELECT * FROM Employees 
+	WHERE FirstName LIKE '%N';
