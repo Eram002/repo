@@ -71,3 +71,9 @@ VALUES ('Sam',50000,50,'Developer','Male'),
 	FROM Employees;
 
 
+	SELECT E_Name,
+	CASE
+		WHEN E_Age > 45 THEN 'Age is GREATER THAN 45'
+	ELSE 'MINOR'
+	END AS TYPE
+	FROM Employees;
